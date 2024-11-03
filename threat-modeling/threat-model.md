@@ -46,11 +46,9 @@ Utilizzare il framework **STRIDE** per analizzare le minacce potenziali sulle su
 
 > **Suggerimento**: Per ogni superficie di attacco, documenta le minacce usando una tabella:
 
-```markdown
 | Componente | Superficie di Attacco | Minaccia                    | Categoria STRIDE | Descrizione                                     |
 |------------|-----------------------|-----------------------------|------------------|-------------------------------------------------|
 | API        | Endpoint `/login`     | Forzatura delle credenziali | Spoofing         | Attacco brute-force per accesso non autorizzato |
-```
 
 ### 4. Valutare il Livello di Rischio
 
@@ -80,13 +78,11 @@ Valuta il rischio anche in termini di impatto sul business, così da comprendern
 
 Utilizza una tabella per documentare le minacce e il loro livello di rischio, sia a livello di threat che di business.
 
-```markdown
 | Minaccia                                       | Probabilità | Impatto  | Threat Risk Level | Business Risk Level | Note                                    |
 |------------------------------------------------|-------------|----------|-------------------|---------------------|-----------------------------------------|
 | Forzatura delle credenziali su API di login    | Alta        | Elevato  | A                 | B                   | Richiede limiti di login e monitoraggio |
 | Esposizione di dati sensibili                  | Media       | Critico  | B                 | A                   | Implementare crittografia e logging     |
 | Interruzione del servizio tramite attacco DDoS | Bassa       | Moderato | C                 | C                   | Configurare protezione DDoS             |
-```
 
 ### 5. Definire le Contromisure
 

@@ -1,6 +1,6 @@
-# Linee Guida per l'Implementazione del Modello Zero Trust
+# Modello Zero Trust
 
-### Obiettivo
+## Obiettivo
 
 Zero Trust è un modello di sicurezza che richiede l'autenticazione e l'autorizzazione di tutti i componenti di un sistema prima di permettere l'accesso o l'esecuzione di operazioni. Questo approccio si basa su una filosofia di controllo rigoroso e su una continua verifica della legittimità di tutte le richieste, interne ed esterne.
 
@@ -21,6 +21,14 @@ I seguenti principi rappresentano le basi su cui costruire un ambiente Zero Trus
 3. **Controllo Universale delle Richieste**
    - Applicare verifiche di sicurezza a tutte le richieste, sia in ingresso che in uscita.
    - Assicurarsi che anche le richieste interne siano soggette a rigorosi controlli, poiché le minacce possono provenire da utenti o componenti interni compromessi.
+
+4. **Principio del Minimo Privilegio (PoLP)**
+   - Assegnare solo le autorizzazioni necessarie per eseguire le operazioni richieste.
+   - Limitare l'accesso alle sole risorse necessarie e revocare le autorizzazioni non necessarie.
+
+5. **Controllo Continuo**
+   - Eseguire verifiche di sicurezza continue per monitorare le attività e rilevare minacce in tempo reale.
+   - Adattare le misure di sicurezza ai cambiamenti dell'ambiente e alle nuove minacce.
 
 ---
 
@@ -89,5 +97,3 @@ Di seguito alcuni esempi di come applicare Zero Trust nei sistemi software:
 ---
 
 > **Nota**: Zero Trust richiede un'implementazione continua e iterativa. Le configurazioni e i criteri devono essere rivisti e aggiornati regolarmente per mantenere un alto livello di sicurezza.
-
----

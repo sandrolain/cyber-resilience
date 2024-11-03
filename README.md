@@ -10,29 +10,50 @@ cyber-resilience e' un progetto che si propone di creare un framework di riferim
 
 Il progetto si propone di raccogliere e organizzare informazioni su come garantire la sicurezza e la protezione dei dati, delle infrastrutture e delle applicazioni dalle minacce cibernetiche.
 
-## Principi
+## Documenti
 
-- [ ] Zero trust
-- [ ] Least privilege
-- [ ] Keep it simple
-- [ ] Clean code
-- [ ] Automated procedures
-- [ ] Continuous improvements
+### Principi fondamentali
 
-## Struttura
+- [Clean Code](priciples/clean-code.md)
+- [Continuous Improvement](priciples/continuous-improvement.md)
+- [Security by Design](priciples/security-by-design.md)
+- [Zero Trust](priciples/zero-trust.md)
 
-### Design
+---
 
-- [ ] Threat Modeling
+## Checklist integrazione
+
+### Principi
+
+- [x] Zero trust
+- [x] Least privilege
+- [x] Keep it simple
+- [x] Clean code
+- [x] Automated procedures
+- [x] Continuous improvements
+- [x] Security by design
+  - [x] Shift left security
+  - [x] Secure by design
+  - [x] Security as code
+
+### Struttura
+
+#### Design
+
+- [x] Threat Modeling
+  - [x] STRIDE
+  - [x] CIA: Confidentiality, Integrity, and Availability
 - [ ] Design dell'infrastruttura
+  - [ ] IaC
 - [ ] Design dei servizi
 - [ ] Scelta degli standards di sicurezza
 - [ ] Definizione di una classe/livello di rischio per ogni componente
 
-### Sviluppo
+#### Sviluppo
 
 - [ ] Sviluppo dell'infrastruttura
   - [ ] Hardening dell'infrastruttura
+  - [ ] IaC
 - [ ] Sviluppo del codice
   - [ ] Leggibilità del codice
     - [ ] Scelta della tecnologia di formattazione
@@ -44,6 +65,9 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
     - [ ] Definire un formato e livelli di log condivisi
     - [ ] Definire linee guida per l'integrazione dei log
     - [ ] Utilizzo di log strutturati
+  - [ ] Scelta delle dipendenze
+    - [ ] Valutazione della licenza
+    - [ ] Valutazione della sicurezza
   - [ ] Evitare patterns non sicuri
   - [ ] Evitare secret nel codice
   - [ ] Gestione degli errori
@@ -59,8 +83,9 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] Test di sicurezza
   - [ ] Test di configurazione
   - [ ] Effettuare Code Review
+  - [ ] Source Version Control
 
-### Verifica
+#### Verifica
 
 - [ ] Verifica del codice
   - [ ] Detection delle vulnerabilità del codice
@@ -97,7 +122,13 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
     - [ ] Penetration testing
     - [ ] Blameless postmortems
 
-## Policy Aziendale
+### Response
+
+- [ ] Incident Response
+  - [ ] Incident Response Automation
+- [ ] Management of Threats
+
+### Policy Aziendale
 
 - [ ] Acceptable Use Policy (AUP)
 - [ ] Information Security Policy (ISP)
@@ -106,7 +137,11 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 - [ ] Gestione degli accessi fisici in azienda
   - [ ] Registro accessi in azienda
   - [ ] Area sicura per l’attesa degli ospiti
-- [ ] Gestione e messa in sicurezza degli strumenti aziendali
+- [ ] Gestione e messa in sicurezza degli asset aziendali
+  - [ ] Labels e classificazione
+  - [ ] Manutenzione
+  - [ ] Utilizzo solo per il fine previsto (divieto  per usi privati)
+  - [ ] Distruzione a fine vita
 - [ ] Cifratura e messa in sicurezza dei dati aziendali
 - [ ] Cifratura del volume del pc di lavoro
 - [ ] Utilizzo di antivirus
@@ -117,7 +152,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 - [ ] Utilizzo solo di dispositi di archiviazione con cifratura forte
 - [ ] Utilizzo di accesso biometrico, token con chiave privata, o password sicure
 
-## References
+### References
 
 - [ ] Vulnerability Database
   - [ ] CVE
@@ -135,7 +170,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] Cyber Resilience Act
   - [ ] NIS 2
 
-## Note
+### Note
 
 - [ ] Strumenti e linee guida per
   - [ ] Sviluppo
