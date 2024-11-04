@@ -43,11 +43,11 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 - [x] Threat Modeling
   - [x] STRIDE
   - [x] CIA: Confidentiality, Integrity, and Availability
+  - [x] Definizione di una classe/livello di rischio per ogni componente
 - [ ] Design dell'infrastruttura
-  - [ ] IaC
+  - [x] IaC
 - [ ] Design dei servizi
 - [ ] Scelta degli standards di sicurezza
-- [ ] Definizione di una classe/livello di rischio per ogni componente
 
 #### Sviluppo
 
@@ -70,7 +70,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
     - [ ] Valutazione della sicurezza
   - [ ] Evitare patterns non sicuri
   - [ ] Evitare secret nel codice
-  - [ ] Gestione degli errori
+  - [x] Gestione degli errori
   - [ ] Manutenzione del codice
   - [ ] Gestire gli avvisi di linting e compilazione
   - [ ] Utilizzare sistemi di autenticazione ed autorizzazione affidabili
