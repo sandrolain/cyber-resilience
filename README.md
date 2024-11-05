@@ -56,11 +56,11 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] IaC
 - [ ] Sviluppo del codice
   - [ ] Leggibilità del codice
-    - [ ] Scelta della tecnologia di formattazione
-    - [ ] Definire una formattazione condivisa
+    - [x] Scelta della tecnologia di formattazione
+    - [x] Definire una formattazione condivisa
   - [ ] Verifica degli errori (linting)
-    - [ ] Scelta della tecnologia di linting
-    - [ ] Definire le regole di linting condivise
+    - [x] Scelta della tecnologia di linting
+    - [x] Definire le regole di linting condivise
   - [ ] Logging
     - [ ] Definire un formato e livelli di log condivisi
     - [ ] Definire linee guida per l'integrazione dei log
@@ -84,6 +84,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] Test di configurazione
   - [ ] Effettuare Code Review
   - [ ] Source Version Control
+  - [ ] Utilizzare un template per nuovi progetti
 
 #### Verifica
 
