@@ -119,6 +119,48 @@ app.listen(3000, () => {
 });
 ```
 
+## Gestione degli errori con Promises
+
+Le Promises sono un modo per gestire azioni asincrone in Node.js. Ecco un esempio di gestione degli errori con Promises:
+
+```javascript
+const express = require('express');
+const app = express();
+
+// Middleware di gestione degli errori
+app.use((err, req, res, next) => {
+  console.error("Errore interno:", err); // Log dettagliato per il team
+
+  // Risposta generica all'utente
+  res.status(500).json({ message: "An error occurred. Please try again later." });
+});
+
+// Funzione che simula un'operazione che può fallire restituendo una Promise
+function riskyOperationAsync() {
+  return new Promise((resolve, reject) => {
+    // Simula un'operazione asincrona che fallisce
+    setTimeout(() => {
+      reject(new Error("Database connection failed"));
+    }, 1000);
+  });
+}
+
+app.get('/async', (req, res, next) => {
+  riskyOperationAsync()
+    .then(() => {
+      res.send("Operation successful");
+    })
+    .catch(error => {
+      // Passa l'errore al middleware di gestione
+      next(error);
+    });
+});
+
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
+```
+
 In questo esempio:
 
 - In fase di sviluppo, gli errori sono loggati in modo dettagliato nella console del server.
