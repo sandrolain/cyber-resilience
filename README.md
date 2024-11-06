@@ -61,21 +61,22 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] Verifica degli errori (linting)
     - [x] Scelta della tecnologia di linting
     - [x] Definire le regole di linting condivise
-  - [ ] Logging
-    - [ ] Definire un formato e livelli di log condivisi
-    - [ ] Definire linee guida per l'integrazione dei log
-    - [ ] Utilizzo di log strutturati
-  - [ ] Scelta delle dipendenze
-    - [ ] Valutazione della licenza
-    - [ ] Valutazione della sicurezza
+  - [x] Logging
+    - [x] Definire un formato e livelli di log condivisi
+    - [x] Definire linee guida per l'integrazione dei log
+    - [x] Utilizzo di log strutturati
+  - [x] Scelta delle dipendenze
+    - [x] Valutazione della licenza
+    - [x] Valutazione della sicurezza
   - [ ] Evitare patterns non sicuri
   - [ ] Evitare secret nel codice
   - [x] Gestione degli errori
-  - [ ] Manutenzione del codice
+  - [x] Manutenzione del codice
   - [ ] Gestire gli avvisi di linting e compilazione
   - [ ] Utilizzare sistemi di autenticazione ed autorizzazione affidabili
   - [ ] Utilizzare standard di cifratura forte consolidati
   - [ ] Test di unità
+    - [ ] Scelta di un framwork di test
     - [ ] Definire Test Coverage minima
   - [ ] Test di integrazione
   - [ ] Test E2E
