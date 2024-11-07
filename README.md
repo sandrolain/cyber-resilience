@@ -58,7 +58,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] Leggibilità del codice
     - [x] Scelta della tecnologia di formattazione
     - [x] Definire una formattazione condivisa
-  - [ ] Verifica degli errori (linting)
+  - [x] Verifica degli errori (linting)
     - [x] Scelta della tecnologia di linting
     - [x] Definire le regole di linting condivise
   - [x] Logging
@@ -69,12 +69,11 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
     - [x] Valutazione della licenza
     - [x] Valutazione della sicurezza
   - [ ] Evitare patterns non sicuri
-  - [ ] Evitare secret nel codice
   - [x] Gestione degli errori
   - [x] Manutenzione del codice
-  - [ ] Gestire gli avvisi di linting e compilazione
-  - [ ] Utilizzare sistemi di autenticazione ed autorizzazione affidabili
-  - [ ] Utilizzare standard di cifratura forte consolidati
+  - [x] Gestire gli avvisi di linting e compilazione
+  - [x] Utilizzare sistemi di autenticazione ed autorizzazione affidabili
+  - [x] Utilizzare standard di cifratura forte consolidati
   - [ ] Test di unità
     - [ ] Scelta di un framwork di test
     - [ ] Definire Test Coverage minima
@@ -83,9 +82,10 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [ ] Test di performance
   - [ ] Test di sicurezza
   - [ ] Test di configurazione
-  - [ ] Effettuare Code Review
-  - [ ] Source Version Control
-  - [ ] Utilizzare un template per nuovi progetti
+  - [x] Source Version Control
+    - [x] Evitare secret nel codice
+    - [x] Effettuare Code Review
+  - [x] Utilizzare un template per nuovi progetti
 
 #### Verifica
 
