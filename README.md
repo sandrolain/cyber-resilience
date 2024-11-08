@@ -136,23 +136,23 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 - [ ] Information Security Policy (ISP)
 - [ ] Non-Disclosure Agreement (NDA)
 
-- [ ] Gestione degli accessi fisici in azienda
-  - [ ] Registro accessi in azienda
-  - [ ] Area sicura per l’attesa degli ospiti
-- [ ] Gestione e messa in sicurezza degli asset aziendali
-  - [ ] Labels e classificazione
-  - [ ] Manutenzione
-  - [ ] Utilizzo solo per il fine previsto (divieto  per usi privati)
-  - [ ] Distruzione a fine vita
+- [x] Gestione degli accessi fisici in azienda
+  - [x] Registro accessi in azienda
+  - [x] Area sicura per l’attesa degli ospiti
+- [x] Gestione e messa in sicurezza degli asset aziendali
+  - [x] Labels e classificazione
+  - [x] Manutenzione
+  - [x] Utilizzo solo per il fine previsto (divieto  per usi privati)
+  - [x] Distruzione a fine vita
 - [ ] Cifratura e messa in sicurezza dei dati aziendali
-- [ ] Cifratura del volume del pc di lavoro
-- [ ] Utilizzo di antivirus
-- [ ] Utilizzo di firewall software
+- [x] Cifratura del volume del pc di lavoro
+- [x] Utilizzo di antivirus
+- [x] Utilizzo di firewall software
 - [ ] Gestione della postazione di lavoro ed delle informazioni esposte
 - [ ] Autenticazione a due fattori
-- [ ] Divieto di utilizzo di dispositivi di archiviazione digitale non facenti parte degli asset
-- [ ] Utilizzo solo di dispositi di archiviazione con cifratura forte
-- [ ] Utilizzo di accesso biometrico, token con chiave privata, o password sicure
+- [x] Divieto di utilizzo di dispositivi di archiviazione digitale non facenti parte degli asset
+- [x] Utilizzo solo di dispositi di archiviazione con cifratura forte
+- [x] Utilizzo di accesso biometrico, token con chiave privata, o password sicure ove disponibile
 
 ### References
 
