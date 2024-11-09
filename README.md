@@ -42,12 +42,16 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [x] STRIDE
   - [x] CIA: Confidentiality, Integrity, and Availability
   - [x] Definizione di una classe/livello di rischio per ogni componente
+  - [ ] Approccio basato sulla probabilità e sull'impatto del rischio
 
 ### Sicurezza dell'Infrastruttura
 
 - [ ] Design dell'infrastruttura
   - [x] Infrastructure as Code (IaC)
+  - [ ] Segmentazione e isolamento dei network
 - [ ] Design dei servizi
+  - [ ] Impostazione di criteri di accesso e permessi
+  - [ ] Definizione di Service Level Agreements (SLA) e obiettivi di uptime
 - [ ] Scelta degli standard di sicurezza
 
 ## Sviluppo Sicuro
@@ -55,7 +59,10 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 ### Infrastruttura
 
 - [ ] Hardening dell'infrastruttura
+  - [ ] Configurazione sicura dei server, firewall e database
+  - [ ] Abilitazione del logging e auditing per il monitoraggio
 - [ ] IaC
+  - [ ] Verifica di sicurezza per gli script IaC
 
 ### Codice
 
@@ -141,7 +148,10 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 
 - [ ] Incident Response
   - [ ] Automazione nella risposta agli incidenti
+  - [ ] Definizione e test di piani di risposta agli incidenti
 - [ ] Management of Threats
+  - [ ] Monitoraggio attivo e continuo delle minacce
+  - [ ] Reporting periodico sulle minacce
 
 ## Politiche e Sicurezza Fisica
 
