@@ -21,9 +21,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
 
 ---
 
-## Checklist integrazione
-
-### Principi
+## Principi Generali di Sicurezza
 
 - [x] Zero trust
 - [x] Least privilege
@@ -36,85 +34,100 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [x] Secure by design
   - [x] Security as code
 
-### Struttura
+## Design e Pianificazione
 
-#### Design
+### Threat Modeling e Classificazione Rischi
 
 - [x] Threat Modeling
   - [x] STRIDE
   - [x] CIA: Confidentiality, Integrity, and Availability
   - [x] Definizione di una classe/livello di rischio per ogni componente
+
+### Sicurezza dell'Infrastruttura
+
 - [ ] Design dell'infrastruttura
-  - [x] IaC
+  - [x] Infrastructure as Code (IaC)
 - [ ] Design dei servizi
-- [ ] Scelta degli standards di sicurezza
+- [ ] Scelta degli standard di sicurezza
 
-#### Sviluppo
+## Sviluppo Sicuro
 
-- [ ] Sviluppo dell'infrastruttura
-  - [ ] Hardening dell'infrastruttura
-  - [ ] IaC
-- [ ] Sviluppo del codice
-  - [ ] Leggibilità del codice
+### Infrastruttura
+
+- [ ] Hardening dell'infrastruttura
+- [ ] IaC
+
+### Codice
+
+- [ ] Sviluppo del codice sicuro
+  - [ ] Leggibilità del codice
     - [x] Scelta della tecnologia di formattazione
     - [x] Definire una formattazione condivisa
   - [x] Verifica degli errori (linting)
     - [x] Scelta della tecnologia di linting
     - [x] Definire le regole di linting condivise
   - [x] Logging
-    - [x] Definire un formato e livelli di log condivisi
+    - [x] Definire formato e livelli di log condivisi
     - [x] Definire linee guida per l'integrazione dei log
     - [x] Utilizzo di log strutturati
-  - [x] Scelta delle dipendenze
+  - [x] Gestione delle dipendenze
     - [x] Valutazione della licenza
     - [x] Valutazione della sicurezza
   - [ ] Evitare patterns non sicuri
   - [x] Gestione degli errori
   - [x] Manutenzione del codice
-  - [x] Gestire gli avvisi di linting e compilazione
-  - [x] Utilizzare sistemi di autenticazione ed autorizzazione affidabili
-  - [x] Utilizzare standard di cifratura forte consolidati
-  - [ ] Test di unità
-    - [ ] Scelta di un framwork di test
-    - [ ] Definire Test Coverage minima
-  - [ ] Test di integrazione
-  - [ ] Test E2E
-  - [ ] Test di performance
-  - [ ] Test di sicurezza
-  - [ ] Test di configurazione
+  - [x] Gestione degli avvisi di linting e compilazione
+  - [x] Autenticazione e autorizzazione affidabili
+  - [x] Cifratura forte consolidata
+  - [ ] Test di sicurezza e qualità
+    - [ ] Test di unità
+      - [ ] Scelta del framework di test
+      - [ ] Definire la Test Coverage minima
+    - [ ] Test di integrazione
+    - [ ] Test End-to-End (E2E)
+    - [ ] Test di performance
+    - [ ] Test di sicurezza
+    - [ ] Test di configurazione
   - [x] Source Version Control
     - [x] Evitare secret nel codice
     - [x] Effettuare Code Review
-  - [x] Utilizzare un template per nuovi progetti
+  - [x] Utilizzo di template per nuovi progetti
 
-#### Verifica
+## Verifica e Test
+
+### Codice e Dipendenze
 
 - [ ] Verifica del codice
-  - [ ] Detection delle vulnerabilità del codice
-    - [ ] Software Composition Analysis (SCA): analisi sulla composizione
-      - [ ] Verifica di vulnerabilità conosciute nelle dipendenze
-      - [ ] Generazione di report e SBOM (Software Bill of Materials)
+  - [ ] Vulnerabilità del codice
+    - [ ] Software Composition Analysis (SCA)
+      - [ ] Verifica vulnerabilità note nelle dipendenze
+      - [ ] Generazione report e SBOM (Software Bill of Materials)
         - [ ] SPDX (Linux Foundation)
         - [ ] DependencyTrack (OWASP Foundation)
-  - [ ] Static Application Security Testing (SAST): analisi del codice sorgente
+  - [ ] Static Application Security Testing (SAST)
     - [ ] Linters e validatori
-    - [ ] Analisi del codice per identificare pattern con possibili vulnerabilità
-    - [ ] Identificazione di secret nel codice o risorse correlate
-  - [ ] Dynamic Application Security Testing (DAST): analisi sul codice compilato
+    - [ ] Identificazione pattern vulnerabili
+    - [ ] Rilevazione di secret nel codice
+  - [ ] Dynamic Application Security Testing (DAST)
+
+### Container e Infrastruttura
+
 - [ ] Verifica dei container
-  - [ ] Detection delle "poisoned images"
-  - [ ] Detection delle vulnerabilità delle immagini container
-  - [ ] Verifica di integrità delle immagini container
+  - [ ] Rilevazione di immagini container compromesse
+  - [ ] Verifica vulnerabilità e integrità delle immagini container
 - [ ] Verifica dell'infrastruttura
-  - [ ] Verifica degli errori di configurazione
-  - [ ] Verifica delle vulnerabilità server e network
+  - [ ] Verifica configurazioni errate
+  - [ ] Verifica vulnerabilità server e network
+
+### Automazione e Continuous Testing
+
 - [ ] Automazione
-  - [ ] Fase di Sviluppo
-    - [ ] IDE Security plugins
+  - [ ] Fase di sviluppo
+    - [ ] Security plugins per IDE
     - [ ] Pre-commit hooks
   - [ ] Fase di CI
     - [ ] Esecuzione test (Unità, Integrazione, E2E, Performance, Sicurezza, Configurazione)
-    - [ ] Verifica vulnerabilità supply chain
+    - [ ] Verifica vulnerabilità supply chain
   - [ ] Fase operativa
     - [ ] Continuous monitoring
       - [ ] Dynamic application security testing
@@ -124,63 +137,72 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
     - [ ] Penetration testing
     - [ ] Blameless postmortems
 
-### Response
+## Risposta e Gestione delle Minacce
 
 - [ ] Incident Response
-  - [ ] Incident Response Automation
+  - [ ] Automazione nella risposta agli incidenti
 - [ ] Management of Threats
 
-### Policy Aziendale
+## Politiche e Sicurezza Fisica
 
-- [ ] Acceptable Use Policy (AUP)
-- [ ] Information Security Policy (ISP)
-- [ ] Non-Disclosure Agreement (NDA)
+### Policy Aziendali
 
-- [x] Gestione degli accessi fisici in azienda
+- [x] Acceptable Use Policy (AUP)
+- [x] Information Security Policy (ISP)
+- [x] Non-Disclosure Agreement (NDA)
+
+### Gestione Accessi Fisici e Sicurezza degli Asset
+
+- [x] Accessi fisici
   - [x] Registro accessi in azienda
-  - [x] Area sicura per l’attesa degli ospiti
-- [x] Gestione e messa in sicurezza degli asset aziendali
-  - [x] Labels e classificazione
+  - [x] Area sicura per ospiti
+- [x] Gestione e sicurezza degli asset
+  - [x] Etichettatura e classificazione
   - [x] Manutenzione
-  - [x] Utilizzo solo per il fine previsto (divieto  per usi privati)
-  - [x] Distruzione a fine vita
-- [ ] Cifratura e messa in sicurezza dei dati aziendali
-- [x] Cifratura del volume del pc di lavoro
-- [x] Utilizzo di antivirus
-- [x] Utilizzo di firewall software
-- [ ] Gestione della postazione di lavoro ed delle informazioni esposte
+  - [x] Uso limitato a scopi aziendali
+  - [x] Distruzione sicura a fine vita
+
+### Protezione delle Informazioni e Sicurezza dei Dispositivi
+
+- [x] Cifratura dei volumi sui PC aziendali
+- [x] Utilizzo di antivirus e firewall
+- [x] Gestione della postazione di lavoro
 - [ ] Autenticazione a due fattori
-- [x] Divieto di utilizzo di dispositivi di archiviazione digitale non facenti parte degli asset
-- [x] Utilizzo solo di dispositi di archiviazione con cifratura forte
-- [x] Utilizzo di accesso biometrico, token con chiave privata, o password sicure ove disponibile
+- [x] Divieto di dispositivi di archiviazione non autorizzati
+- [x] Uso di dispositivi con cifratura
+- [x] Autenticazione biometrica, token o password sicure
 
-### References
+## Riferimenti e Standard di Sicurezza
 
-- [ ] Vulnerability Database
-  - [ ] CVE
-  - [ ] OSV
-  - [ ] Go Vulnerability Database
-  - [ ] GitHub Advisory Database
-    - [ ] NPM audit
-- [ ] Standard Awareness
-  - [ ] OWASP Top 10
-  - [ ] OWASP IoT Top 10
-- [ ] Frameworks
-  - [ ] CSA IoT Security Controls Framework
-  - [ ] ISO 27001
-- [ ] Laws
-  - [ ] Cyber Resilience Act
-  - [ ] NIS 2
+### Vulnerability Database
 
-### Note
+- [ ] CVE
+- [ ] OSV
+- [ ] Go Vulnerability Database
+- [ ] GitHub Advisory Database
+  - [ ] NPM audit
 
-- [ ] Strumenti e linee guida per
+### Standard e Framework
+
+- [ ] OWASP Top 10
+- [ ] OWASP IoT Top 10
+- [ ] CSA IoT Security Controls Framework
+- [ ] ISO 27001
+
+### Normative
+
+- [ ] Cyber Resilience Act
+- [ ] NIS 2
+
+## Note Aggiuntive
+
+- [ ] Linee guida per
   - [ ] Sviluppo
   - [ ] Test
   - [ ] Continuous integration
   - [ ] Deployment
   - [ ] Monitoraggio
-  - [ ] Responsità agli incidenti
+  - [ ] Gestione degli incidenti
 
-- [ ] Utilizzo di approcci e tecnologie standard, conosciute, consolidate e mantenute.
-- [ ] In fase di progettazione, dare attenzione a consumi e performance
+- [ ] Utilizzo di tecnologie standard, affidabili e mantenute
+- [ ] Ottimizzazione delle performance e dei consumi in fase di progettazione

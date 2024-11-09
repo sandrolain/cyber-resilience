@@ -1,4 +1,3 @@
-
 # Guida per la Creazione e il Mantenimento di un Threat Model
 
 Questa guida descrive il concetto di **threat modeling** e fornisce istruzioni per la creazione e il mantenimento di un modello di minaccia, fondamentale per migliorare la sicurezza di applicazioni e sistemi.
@@ -20,20 +19,20 @@ Un **threat model** è un'analisi strutturata dei potenziali rischi di sicurezza
 
 ## Passi per Creare un Threat Model
 
-### 1. Definire i Confini e lo Scopo del Sistema
+### Definire i Confini e lo Scopo del Sistema
 
-- **Descrivere il Sistema**: Fornire una panoramica dell’architettura e delle funzionalità del sistema.
-- **Identificare i Confini del Sistema**: Distinguere i componenti inclusi e quelli esclusi dall’analisi.
+- **Descrivere il Sistema**: Fornire una panoramica dell'architettura e delle funzionalità del sistema.
+- **Identificare i Confini del Sistema**: Distinguere i componenti inclusi e quelli esclusi dall'analisi.
 - **Definire gli Obiettivi di Sicurezza**: Stabilire i requisiti di sicurezza principali (es. integrità dei dati, disponibilità dei servizi, protezione della privacy).
 
-### 2. Creare un Diagramma del Sistema
+### Creare un Diagramma del Sistema
 
 Un diagramma di sistema aiuta a visualizzare i flussi di dati, i componenti principali e i punti di ingresso.
 
 - **Diagramma di Flusso dei Dati (DFD)**: Mostra il percorso dei dati attraverso il sistema e identifica le interazioni tra i componenti.
 - **Identificare le Superfici di Attacco**: Annotare i punti in cui il sistema interagisce con attori esterni, come API, interfacce utente o connessioni di rete.
 
-### 3. Identificare le Minacce
+### Identificare le Minacce
 
 Utilizzare il framework **STRIDE** per analizzare le minacce potenziali sulle superfici di attacco identificate:
 
@@ -50,7 +49,7 @@ Utilizzare il framework **STRIDE** per analizzare le minacce potenziali sulle su
 |------------|-----------------------|-----------------------------|------------------|-------------------------------------------------|
 | API        | Endpoint `/login`     | Forzatura delle credenziali | Spoofing         | Attacco brute-force per accesso non autorizzato |
 
-### 4. Valutare il Livello di Rischio
+### Valutare il Livello di Rischio
 
 Per ogni minaccia, valuta il livello di rischio in base a **probabilità** e **impatto**. Utilizza una classificazione con lettere per assegnare priorità ai rischi in modo chiaro e uniforme.
 
@@ -84,9 +83,9 @@ Utilizza una tabella per documentare le minacce e il loro livello di rischio, si
 | Esposizione di dati sensibili                  | Media       | Critico  | B                 | A                   | Implementare crittografia e logging     |
 | Interruzione del servizio tramite attacco DDoS | Bassa       | Moderato | C                 | C                   | Configurare protezione DDoS             |
 
-### 5. Definire le Contromisure
+### Definire le Contromisure
 
-Per ogni minaccia prioritaria, definisci le contromisure che riducono la probabilità o l’impatto.
+Per ogni minaccia prioritaria, definisci le contromisure che riducono la probabilità o l'impatto.
 
 | Minaccia | Contromisura | Descrizione | Stato (In corso, Completa, Pianificata) |
 |----------|--------------|-------------|-----------------------------------------|
@@ -98,17 +97,17 @@ Per ogni minaccia prioritaria, definisci le contromisure che riducono la probabi
 
 Il threat model deve essere aggiornato regolarmente per adattarsi ai cambiamenti nel sistema e alle nuove minacce.
 
-### 1. Monitoraggio e Logging
+### Monitoraggio e Logging
 
 - **Monitoraggio Attivo**: Configura allarmi per rilevare attività sospette.
 - **Conservazione dei Log**: Mantieni log dettagliati per consentire l'analisi retrospettiva e la risposta agli incidenti.
 
-### 2. Test e Verifica
+### Test e Verifica
 
 - **Penetration Testing**: Effettua test di penetrazione per verificare la sicurezza delle contromisure implementate.
 - **Code Review**: Esegui revisioni periodiche del codice per individuare vulnerabilità.
 
-### 3. Revisione Periodica
+### Revisione Periodica
 
 - **Piano di Revisione**: Effettua una revisione del threat model a intervalli regolari (es. trimestrale, semestrale) o a seguito di modifiche significative del sistema.
 - **Documentazione delle Modifiche**: Tieni traccia delle modifiche per garantire la trasparenza e mantenere una storia del modello.
@@ -131,5 +130,3 @@ Il threat model deve essere aggiornato regolarmente per adattarsi ai cambiamenti
 - [OWASP Threat Modeling Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
 - [NIST SP 800-30 Guide for Conducting Risk Assessments](https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final)
 - [Microsoft STRIDE Threat Modeling](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
-
----
