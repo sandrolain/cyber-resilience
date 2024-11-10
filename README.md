@@ -87,11 +87,11 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [x] Autenticazione e autorizzazione affidabili
   - [x] Cifratura forte consolidata
   - [ ] Test di sicurezza e qualità
-    - [ ] Test di unità
-      - [ ] Scelta del framework di test
-      - [ ] Definire la Test Coverage minima
-    - [ ] Test di integrazione
-    - [ ] Test End-to-End (E2E)
+    - [x] Test di unità
+      - [x] Scelta del framework di test
+      - [x] Definire la Test Coverage minima
+    - [x] Test di integrazione
+    - [x] Test End-to-End (E2E)
     - [ ] Test di performance
     - [ ] Test di sicurezza
     - [ ] Test di configurazione
