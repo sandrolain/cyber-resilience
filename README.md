@@ -80,7 +80,7 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
   - [x] Gestione delle dipendenze
     - [x] Valutazione della licenza
     - [x] Valutazione della sicurezza
-  - [ ] Evitare patterns non sicuri
+  - [x] Evitare patterns non sicuri
   - [x] Gestione degli errori
   - [x] Manutenzione del codice
   - [x] Gestione degli avvisi di linting e compilazione
@@ -92,9 +92,9 @@ Il progetto si propone di raccogliere e organizzare informazioni su come garanti
       - [x] Definire la Test Coverage minima
     - [x] Test di integrazione
     - [x] Test End-to-End (E2E)
-    - [ ] Test di performance
+    - [x] Test di performance
     - [ ] Test di sicurezza
-    - [ ] Test di configurazione
+    - [x] Test di configurazione
   - [x] Source Version Control
     - [x] Evitare secret nel codice
     - [x] Effettuare Code Review
